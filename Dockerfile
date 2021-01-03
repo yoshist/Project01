@@ -1,4 +1,4 @@
-FROM ubuntu:latest AS ubuntu
+FROM ubuntu:latest
 LABEL maintainer="ubuntu_OS"
 
 WORKDIR /code
