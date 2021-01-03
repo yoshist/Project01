@@ -1,6 +1,5 @@
 pipeline {
   agent { dockerfile true }
-  }
   triggers { cron('* * * * *') }
   stages {
     stage ("checkout") {
