@@ -8,7 +8,3 @@ RUN apt-get update && \
     apt-get install --assume-yes git && \
     apt-get install --assume-yes vim 
 
-FROM jenkins/jenkins AS jenkins
-LABEL maintainer="Jenkins"
-
-ENV PORT 8080:8080
