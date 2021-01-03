@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'yoshist/project02:ubuntu0001'
+      args '-v $HOME/.m2:/root/.m2'
+    }
+  }
   triggers { cron('* * * * *') }
   stages {
     stage ("checkout") {
